@@ -23,3 +23,17 @@ compose_deploy:
 
 compose_clean:
 	docker-compose -f api-server/docker-compose.yml down
+
+
+k8s_deploy:
+	kubectl apply -f k8s
+
+k8s_clean:
+	kubectl delete -f k8s
+
+ingress_policy:
+	kubectl create clusterrolebinding permissive-binding \
+	--clusterrole=cluster-admin \
+	--user=admin \
+	--user=kubelet \
+	--group=system:serviceaccounts
