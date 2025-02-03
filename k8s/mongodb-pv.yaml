@@ -1,0 +1,17 @@
+
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: mongodb-pv
+  labels:
+    type: local
+spec:
+  storageClassName: generic
+  capacity:
+    storage: 500Mi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/var/lib/mongo"
+
+ 
