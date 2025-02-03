@@ -1,0 +1,86 @@
+ 3129  alias k=kubectl
+ 3130  alias kap="k apply -f"
+ 3131  history
+ 3132  history | last 10
+ 3133  history | tail -10
+ 3134  history | tail -100
+ 3135  history | tail -10
+ 3136  unalias k
+ 3137  k
+ 3138  alias k=kubectl
+ 3139  ls
+ 3140  mkdir do2425
+ 3141  cd do2425
+ 3142  ls
+ 3143  code .
+ 3144  git clone https://github.com/pafmon/do-contacts-api-dc
+ 3145  ls
+ 3146  cd do-contacts-api-dc
+ 3147  ls
+ 3148  make build
+ 3149  ls
+ 3150  set IMAGETAG=v30012025 && make build
+ 3151  IMAGETAG=v30012025 && make build
+ 3152  export IMAGETAG=v30012025 && make build
+ 3153  export IMAGETAG=v30012025 && make push
+ 3154  export IMAGETAG=v30012025 ; export NAMESPACE=test && make build
+ 3155  export IMAGETAG=v30012025 ; export NAMESPACE=test
+ 3156  set
+ 3157  set | grep NAM
+ 3158  export IMAGETAG=v30012025 ; export NAMESPACE=test
+ 3159  make build
+ 3160  export IMAGETAG=v30012025 ; export NAMESPACE=pafmon
+ 3161  make compose_deploy
+ 3162  ls
+ 3163  cd ..
+ 3164  ls
+ 3165  cd ..
+ 3166  ls
+ 3167  cdcd githu
+ 3168  cd -
+ 3169  git clone https://github.com/pafmon/k8s-hw.git
+ 3170  cd do-contacts-api-dc
+ 3171  ls
+ 3172  mkdir k8s 
+ 3173  ls
+ 3174  cd k8s
+ 3175  ls
+ 3176  kap mongodb-pv.yaml
+ 3177  alis
+ 3178  alias
+ 3179  kap mongodb-pv.yaml
+ 3180  k persistentvolume mongodb-pv
+ 3181  k get persistentvolume mongodb-pv
+ 3182  k describe persistentvolume mongodb-pv
+ 3183  kubectl apply -f mongodb-pvc.yaml
+ 3184  k get persistentvolume mongodb-pvc
+ 3185  k get persistentvolumeclaim mongodb-pvc
+ 3186  kubectl apply -f mongodb-deployment.yaml
+ 3187  k get deployment mongodb-deployment
+ 3188  k get pods
+ 3189  k get deployments
+ 3190  k get pods
+ 3191  kubectl apply -f mongodb-deployment.yaml
+ 3192  k get pods
+ 3193  k get deployments
+ 3194  kubectl apply -f mongodb-deployment.yaml
+ 3195  k get deployments
+ 3196  kubectl apply -f mongodb-service.yaml
+ 3197  k get services
+ 3198  kubectl apply -f contacts-api-deployment.yaml
+ 3199  k get deployments
+ 3200  k get pods
+ 3201  kubectl logs contacts-api-deployment-58b8f46d48-2n7wm
+ 3202  kubectl apply -f contacts-api-service.yaml
+ 3203  kubectl apply -f ingress-deployment.yaml
+ 3204  k get deployments
+ 3205  k get pods
+ 3206  k logs ingress-nginx-deployment-98c6d5b5d-vvdsx
+ 3207  kubectl create clusterrolebinding permissive-binding \\n  --clusterrole=cluster-admin \\n  --user=admin \\n  --user=kubelet \\n  --group=system:serviceaccounts\n
+ 3208  k get pods
+ 3209  kubectl delete -f ingress-deployment.yaml
+ 3210  kubectl apply -f ingress-deployment.yaml
+ 3211  k get pods
+ 3212  kubectl apply -f ingress-service.yaml
+ 3213  k get pods
+ 3214  k get services
